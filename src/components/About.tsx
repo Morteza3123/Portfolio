@@ -1,33 +1,40 @@
 import React from "react";
+import { Element } from "react-scroll";
 
 export default function About() {
   return (
-    <div className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 ">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
+    <Element name="about">
+    <div
+      className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white"
+    >
+      <div className="p-4 max-w-screen-lg md:p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pt-10">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
+            About
+          </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos esse,
-          ducimus dolorum eum nulla deserunt voluptatem accusamus! Velit id,
-          quia repellendus necessitatibus nostrum, blanditiis ducimus dolore aut
-          eius eligendi, ad maxime illo officiis earum? Temporibus iusto facilis
-          quo repellendus? Ut, repudiandae ex perferendis doloremque est itaque
-          possimus error. Sit, odit.
+        <p className="text-xl mt-10">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius,
+          deserunt illum mollitia officiis qui exercitationem perferendis neque
+          quasi a recusandae necessitatibus tempora iusto! Blanditiis error
+          iste, totam fugiat recusandae rerum laborum perferendis molestiae
+          aperiam asperiores nemo. Magni dolor maxime debitis vitae, eaque hic
+          ab mollitia voluptatibus, a nostrum eveniet laborum!
         </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-          veritatis accusamus vel ullam. Provident debitis maiores excepturi eos
-          aspernatur beatae ad distinctio officia nisi sunt, cumque numquam odio
-          voluptas, sint, ipsam delectus eum mollitia velit iste sapiente
-          impedit veritatis. Commodi sapiente animi nobis veritatis perspiciatis
-          fugit, asperiores ipsa quibusdam quod.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          pariatur, vel similique sint, nobis aspernatur ut praesentium
+          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
+          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
+          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
+          magni quo! Eum cupiditate debitis labore.
         </p>
       </div>
     </div>
+    </Element>
   );
 }

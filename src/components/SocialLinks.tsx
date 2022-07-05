@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+
+
 export default function SocialLinks() {
 
     const links = [
@@ -12,7 +14,7 @@ export default function SocialLinks() {
                 Linkedin <FaLinkedin size={30}/>
             </>
             ),
-            href: 'https://linkedin.com',
+            href: 'https://www.linkedin.com/in/morteza-khedri-20076720b',
             style: 'rounded-tr-md'
         },
         {
@@ -22,7 +24,7 @@ export default function SocialLinks() {
                 Github <FaGithub size={30}/>
             </>
             ),
-            href: 'https://github.com',
+            href: 'https://github.com/Morteza3123',
         },
         {
             id: 3,
@@ -50,12 +52,13 @@ export default function SocialLinks() {
                 Medium <FaMedium size={30}/>
             </>
             ),
-            href: 'https://medium.com',
+            href: 'https://medium.com/@mkhedry3123',
             style: 'rounded-br-md'
         }
     ]
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    // <div className="absolute inset-x-0 bottom-16 h-16">
+    <div className="absolute inset-x-0 bottom-16 h-16 lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
       <ul>
 
         {links.map(({id, child, href, style, download}) => (
