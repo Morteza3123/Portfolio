@@ -4,8 +4,8 @@ import { Element } from "react-scroll";
 export default function Contact() {
   return (
     <Element name="contact">
-    <div className="py-32 w-full h-full md:h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white">
-      <div className="pt-96 md:pt-0 flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full ">
+    <div className="pt-0 md:pt-0 py-32 w-full h-full md:h-full bg-gradient-to-b from-black to-gray-800 p-4 text-white">
+      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full ">
         <div className="">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
