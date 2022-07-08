@@ -5,11 +5,14 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
+import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import { useEffect, useRef } from "react";
+import "./styles.css";
 
 function App() {
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <Home />
       <About />
       <Portfolio />

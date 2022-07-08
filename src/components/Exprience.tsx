@@ -100,7 +100,7 @@ export default function Exprience() {
 
         <div className="">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Eprience
+            Exprience
           </p>
           <p className="py-6">This are technologies I've worked on</p>
         </div>

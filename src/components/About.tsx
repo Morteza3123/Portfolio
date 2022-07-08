@@ -1,11 +1,16 @@
 import React from "react";
 import { Element } from "react-scroll";
+import { useSpring, animated } from 'react-spring';
+
 
 export default function About() {
+  const props1 = useSpring({ to: { opacity: 1 }, delay: 400, config: { duration: 2000 },from: { opacity: 0 } })
+
   return (
     <Element name="about">
       <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white">
         <div className="p-4 max-w-screen-lg md:p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <animated.div style={props1}>
           <div className="pt-10">
             <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
               About
@@ -30,6 +35,7 @@ export default function About() {
             analyzer. Actually, I wrote filters for data of the market and
             analyzed them by the chart.
           </p>
+          </animated.div>
         </div>
       </div>
     </Element>

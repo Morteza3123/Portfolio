@@ -2,20 +2,16 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { useSpring, animated } from 'react-spring';
 
 
-export default function SocialLinks() {
-
-  const props = useSpring({ to: {y:0, opacity: 1 }, delay: 800, config: { duration: 2000, mass:300 },from: { y: 150, opacity: 0  } })
-
+export default function SocialLinks2() {
 
     const links = [
         {
             id: 1,
             child: (
                 <>
-                Linkedin <FaLinkedin size={30}/>
+                <FaLinkedin size={30}/>
             </>
             ),
             href: 'https://www.linkedin.com/in/morteza-khedri-20076720b',
@@ -24,18 +20,18 @@ export default function SocialLinks() {
         {
             id: 2,
             child: (
-                <>
-                Github <FaGithub size={30}/>
-            </>
+                <div className="">
+                 <FaGithub size={30}/>
+            </div>
             ),
             href: 'https://github.com/Morteza3123',
         },
         {
             id: 3,
             child: (
-                <>
-                Mail <HiOutlineMail size={30}/>
-            </>
+                <div className="">
+                <HiOutlineMail size={30}/>
+                </div>
             ),
             href: 'mailto:morteza.khedri1998@gmail.com',
         },
@@ -43,17 +39,17 @@ export default function SocialLinks() {
             id: 4,
             child: (
                 <>
-                Resume <BsFillPersonLinesFill size={30}/>
+                <BsFillPersonLinesFill size={30}/>
             </>
             ),
             href: './resume.pdf',
             download: true
         },
         {
-            id: 1,
+            id: 5,
             child: (
                 <>
-                Medium <FaMedium size={30}/>
+                <FaMedium size={30}/>
             </>
             ),
             href: 'https://medium.com/@mkhedry3123',
@@ -62,20 +58,18 @@ export default function SocialLinks() {
     ]
   return (
     // <div className="absolute inset-x-0 bottom-16 h-16">
-    <div className="hidden inset-x-0 bottom-16 h-16 lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
-      <animated.div style={props}>
-      <ul>
+    <div className="md:hidden">
+      <ul className="flex flex-cols-5 items-center content-center">
 
         {links.map(({id, child, href, style, download}) => (
-        <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" + " " + style}>
-          <a href={href} className="flex justify-between items-center w-full text-white"
+        <li key={id} className={"px-4 pt-8" + " " + style}>
+          <a href={href} className="flex w-full text-white"
           download={download} target="_blank" rel="noreferrer">
             {child}
           </a>
         </li>
         ))}
       </ul>
-      </animated.div>
     </div>
   );
 }
