@@ -25,7 +25,7 @@ const Home = () => {
 
   const props = useSpring({
     to: { y: 0, opacity: 1 },
-    delay: 800,
+    delay: 1800,
     config: { duration: 2000, mass: 300 },
     from: { y: -150, opacity: 0 },
   });
