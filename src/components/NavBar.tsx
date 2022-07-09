@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {Link} from "react-scroll";
+import { useSpring, animated } from "react-spring";
  
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+
+  const props = useSpring({
+    to: { y: 0, opacity: 1 },
+    delay: 1800,
+    config: { duration: 2000, mass: 300 },
+    from: { y: -150, opacity: 0 },
+  });
+
 
   const links = [
     {
@@ -28,6 +37,7 @@ const NavBar = () => {
     },
   ];
   return (
+      <animated.div style={props}>
     <div className="z-40 backdrop-brightness-0 flex justify-between items-center w-full h-16 px-4 text-white bg-black/0 fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">Morteza</h1>
@@ -61,6 +71,7 @@ const NavBar = () => {
       </ul>
       )}
     </div>
+      </animated.div>
   );
 };
 
