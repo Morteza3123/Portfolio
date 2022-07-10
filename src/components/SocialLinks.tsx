@@ -50,7 +50,7 @@ export default function SocialLinks() {
             download: true
         },
         {
-            id: 1,
+            id: 5,
             child: (
                 <>
                 Medium <FaMedium size={30}/>
@@ -62,12 +62,12 @@ export default function SocialLinks() {
     ]
   return (
     // <div className="absolute inset-x-0 bottom-16 h-16">
-    <div className="hidden inset-x-0 bottom-16 h-16 lg:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
+    <div className="hidden absolute inset-x-0 bottom-16 h-16 w-4 md:flex lg:flex-col lg:top-[35%] lg:left-0 lg:fixed">
       <animated.div style={props}>
       <ul>
 
         {links.map(({id, child, href, style, download}) => (
-        <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" + " " + style}>
+        <li key={id} className={"hiffrn md:flex justify-between items-center w-40 md:h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300" + " " + style}>
           <a href={href} className="flex justify-between items-center w-full text-white"
           download={download} target="_blank" rel="noreferrer">
             {child}

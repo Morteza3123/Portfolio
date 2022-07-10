@@ -26,13 +26,15 @@ export default function About() {
           </div>
           </animated.div>
           <p className="text-xl mt-10">
-            I’ve been working on Amirkabir company as a full-time Blockchain
+            I work on Amirkabir company as a full-time Blockchain
             developer (November 2021—Present). This company works on fintech and provides software
             services for other companies. Our team work on blockchain
-            applications. I and two of frontend developers have been working on
+            applications. I was responsible for
             Blockchain-based projects. Chamrosh and Bocoin were two projects
             that I developed their smart contracts and web3 interaction in
             frontend.
+
+            I also have knowledge of web2 tools for frontend(raect, javascript, typescript, tailwind, bootstrap, redux) and backend(Nodejs, Mongodb, expressjs). 
           </p>
 
           <br />

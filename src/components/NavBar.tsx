@@ -8,9 +8,9 @@ const NavBar = () => {
 
   const props = useSpring({
     to: { y: 0, opacity: 1 },
-    delay: 1800,
-    config: { duration: 2000, mass: 300 },
-    from: { y: -150, opacity: 0 },
+    delay: 2000,
+    config: { duration: 3000, mass: 300 },
+    from: { y: -50, opacity: 0 },
   });
 
   const props1 = useSpring({
@@ -47,11 +47,9 @@ const NavBar = () => {
   return (
     <animated.div style={props}>
       <div className="z-40 backdrop-brightness-0 flex justify-between items-center w-full h-16 px-4 text-white bg-black/0 fixed">
-        {/* <animated.div style={props1}> */}
           <div>
             <h1 className="text-5xl font-signature ml-2">Morteza</h1>
           </div>
-        {/* </animated.div> */}
         <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
             <li

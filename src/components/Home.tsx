@@ -61,10 +61,9 @@ const Home = () => {
             </animated.div>
             <animated.div style={props2}>
               <p className="text-gray-500 py-4 max-w-md">
-                I have 2 years experience building and developing Blockchain
-                base projects. Currently, I love to work on more Blockchain
-                projects and be a member of teams in order to participate in the
-                web3 projects. I can work with EVM based Blockchains like
+                Hi, I'm Morteza Khedri. I have 2 years experience building and developing Blockchain
+                based projects. Currently, im enthusiastic about more blockchain project and be a member of teams in order to participate in the
+                web3 projects. I work with EVM based Blockchains like
                 Ethereum, Binance smart chain, polygon and other layer two
                 Blockchains.
               </p>

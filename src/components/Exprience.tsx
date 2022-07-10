@@ -16,6 +16,11 @@ import web3 from "../assets/web3.png";
 import ethers from "../assets/ethers.png";
 import mocha from "../assets/mocha.png";
 import chai from "../assets/chai.png";
+import node from "../assets/node.png";
+import express from "../assets/express.png";
+import mongo from "../assets/mongo.png";
+import redux from "../assets/redux.png";
+import docker from "../assets/docker.png";
 import { useSpring, animated } from "react-spring";
 
 export default function Exprience() {
@@ -100,6 +105,36 @@ export default function Exprience() {
       src: chai,
       title: "Chai",
       style: "shadow-red-400",
+    },
+    {
+      id: 13,
+      src: node,
+      title: "Chai",
+      style: "shadow-green-400",
+    },
+    {
+      id: 14,
+      src: express,
+      title: "Express",
+      style: "shadow-gray-700",
+    },
+    {
+      id: 15,
+      src: mongo,
+      title: "Mongodb",
+      style: "shadow-green-900",
+    },
+    {
+      id: 16,
+      src: redux,
+      title: "Redux",
+      style: "shadow-purple-400",
+    },
+    {
+      id: 17,
+      src: docker,
+      title: "Docker",
+      style: "shadow-sky-800",
     },
   ];
 
