@@ -20,10 +20,7 @@ function App() {
       <Exprience />
       <Contact />
       <SocialLinks />
-      <MessengerCustomerChat
-        pageId="100015216666220"
-        appId="701887770874618"
-      />
+      
     </div>
   );
 }
