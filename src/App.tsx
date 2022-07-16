@@ -8,7 +8,9 @@ import SocialLinks from "./components/SocialLinks";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import { useEffect, useRef } from "react";
 import "./styles.css";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+import ChatBox from "./components/ChatBox";
+import Client from "./components/Client";
+import Agent from "./components/Agent";
 
 function App() {
   return (
@@ -20,7 +22,6 @@ function App() {
       <Exprience />
       <Contact />
       <SocialLinks />
-      
     </div>
   );
 }
