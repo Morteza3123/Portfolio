@@ -109,7 +109,7 @@ export default function Exprience() {
     {
       id: 13,
       src: node,
-      title: "Chai",
+      title: "Node JS",
       style: "shadow-green-400",
     },
     {

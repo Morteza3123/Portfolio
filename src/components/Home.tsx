@@ -89,7 +89,7 @@ const Home = () => {
               <img
                 src={HeroImage}
                 alt="my profile"
-                className="rounded-3xl mx-auto w-3/4 md:w-full pt-6 md:pt-0"
+                className="rounded-3xl mx-auto w-3/4 md:w-full pt-6 md:pt-0 hover:scale-125 duration-500"
               />
             </animated.div>
           </div>
