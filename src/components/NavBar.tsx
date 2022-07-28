@@ -13,14 +13,7 @@ const NavBar = () => {
     from: { y: -50, opacity: 0 },
   });
 
-  const props1 = useSpring({
-    loop: { reverse: true },
-    reverse: false,
-    to: {x:0, opacity: 1 },
-    delay: 10,
-    config: { duration: 1000 },
-    from: {x:5, opacity: 0.2 },
-  });
+
 
   const links = [
     {
