@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.jpg";
+import HeroImage from "../assets/heroImage1.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Element, Link } from "react-scroll";
 import { useSpring, animated } from "react-spring";
@@ -56,16 +56,14 @@ const Home = () => {
           <div className="flex flex-col justify-center h-full">
             <animated.div style={props1}>
               <h2 className="text-4xl sm:text-7xl font-bold text-white">
-                I am a Blockchain Developer
+                Blockchain Developer
               </h2>
             </animated.div>
             <animated.div style={props2}>
               <p className="text-gray-500 py-4 max-w-md">
-                Hi, I'm Morteza Khedri. I have 2 years experience building and developing Blockchain
-                based projects. Currently, im enthusiastic about more blockchain project and be a member of teams in order to participate in the
-                web3 projects. I work with EVM based Blockchains like
-                Ethereum, Binance smart chain, polygon and other layer two
-                Blockchains.
+              Greetings! I’m Morteza Khedri, a dedicated Blockchain Developer with over four years of experience designing and building blockchain-based solutions. I specialize in EVM-compatible blockchains, including Ethereum, Binance Smart Chain, Polygon, and various zero knowledge and cross-chain platforms. Passionate about the evolving world of Web3, I am eager to collaborate with innovative teams and contribute to cutting-edge blockchain projects.
+
+
               </p>
             </animated.div>
             <div>
@@ -89,7 +87,7 @@ const Home = () => {
               <img
                 src={HeroImage}
                 alt="my profile"
-                className="rounded-3xl mx-auto w-3/4 md:w-full pt-6 md:pt-0 hover:scale-125 duration-500"
+                className="rounded-3xl mx-auto w-3/4 md:w-3/4 h-80% pt-6 md:pt-0 hover:scale-125 duration-500"
               />
             </animated.div>
           </div>

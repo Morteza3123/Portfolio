@@ -21,6 +21,11 @@ import express from "../assets/express.png";
 import mongo from "../assets/mongo.png";
 import redux from "../assets/redux.png";
 import docker from "../assets/docker.png";
+import rust from "../assets/rust.png";
+import zk from "../assets/zk.png";
+import foundry from "../assets/foundry.png";
+import hyperledger from "../assets/hyper-ledger.png";
+
 import { useSpring, animated } from "react-spring";
 
 export default function Exprience() {
@@ -39,6 +44,30 @@ export default function Exprience() {
       src: soldity,
       title: "Solidity",
       style: "shadow-gray-600",
+    },
+    {
+      id: 1,
+      src: rust,
+      title: "RUST",
+      style: "shadow-gray-600",
+    },
+    {
+      id: 2,
+      src: zk,
+      title: "Zero-Knowledge",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 2,
+      src: hyperledger,
+      title: "Hyperledger",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 2,
+      src: foundry,
+      title: "Foundry",
+      style: "shadow-blue-500",
     },
     {
       id: 2,

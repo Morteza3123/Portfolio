@@ -7,6 +7,8 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import "./styles.css";
+import MyVideo from "./components/MyVideo";
+import Video from "./components/Video";
 
 
 
@@ -28,7 +30,9 @@ function App() {
     <div>
       <NavBar />
       <Home />
-      <About />
+      {/* <Video /> */}
+      <MyVideo />
+      {/* <About /> */}
       <Portfolio />
       <Exprience />
       <Contact />

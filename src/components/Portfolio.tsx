@@ -1,15 +1,12 @@
 import React from "react";
 import { Element } from "react-scroll";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
-import dex from "../assets/portfolio/dex.png";
-import defi from "../assets/portfolio/defi.png";
-import orderdex from "../assets/portfolio/order-dex.png";
 import { useSpring, animated } from "react-spring";
+import priceOracle from "../assets/portfolio/PriceOracle.png";
+import delegateCall from "../assets/portfolio/DelegateCall.png";
+import http from "../assets/portfolio/Http.png";
+import chainlinkFoundry from "../assets/portfolio/ChainlinkFoundry.png";
+import chainlinkHardhat from "../assets/portfolio/ChainlinkHardhat.png";
+import onchainAIAgent from "../assets/portfolio/Onchain-AI-Agent.png";
 
 export default function Portfolio() {
   const props = useSpring({
@@ -24,29 +21,43 @@ export default function Portfolio() {
   const portfolios = [
     {
       id: 1,
-      src: dex,
+      src: onchainAIAgent,
+      link: "https://moodglobalservices.com/blog/on-chain-ai-agents",
+      description: "Onchain AI Agents"
+    },
+    {
+      id: 1,
+      src: priceOracle,
+      link: "https://moodglobalservices.com/blog/price-oracle-manipulation",
+      description: "Price Oracle Attack In Defi"
     },
     {
       id: 2,
-      src: defi,
+      src: delegateCall,
+      link: "https://moodglobalservices.com/blog/understanding-the-risks-of-sharing-control-in-smart-contracts-delegatecall-vulnerability",
+      description: "Delegate Call Vulnerability"
     },
     {
       id: 3,
-      src: orderdex,
+      src: http,
+      link: "https://medium.com/@mkhedry3123/how-to-make-http-get-requests-to-external-apis-from-smart-contracts-e729d9fc4f82?source=user_profile_page---------0-------------ddf0dd0e5744----------------------",
+      description: "How to make http get requests to external apis from smart contracts"
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: chainlinkFoundry,
+      link: "https://medium.com/@mkhedry3123/how-to-test-chainlink-oracle-in-the-foundry-framework-bef40e265e79?source=user_profile_page---------1-------------ddf0dd0e5744----------------------",
+      description: "How to test chainlink oracle in the foundry framework"
     },
     {
       id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
-    },
+      src: chainlinkHardhat,
+      link: "https://medium.com/@mkhedry3123/how-to-test-chainlink-oracle-in-hardhat-using-mocks-12691c5d8c1f?source=user_profile_page---------2-------------ddf0dd0e5744----------------------",
+      description: "How to test chainlink oracle in hardhat using mocks"
+    }
   ];
+ 
+
   return (
     <Element name="portfolio">
       <div className="py-32 bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-full">
@@ -54,17 +65,18 @@ export default function Portfolio() {
           <div className="">
             <animated.div style={props}>
               <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-                Portfolio
+                Articles
               </p>
             </animated.div>
-            <p className="py-6">Check out some of my work right here</p>
+            <p className="py-6">Check out some of my technical researchs right here</p>
           </div>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-8 sm:px-0">
-            {portfolios.map(({ id, src }) => (
+            {portfolios.map(({ id, src, link, description }) => (
               <div
                 key={id}
-                className="shadow-md shadow-gray-600 rounded-lg content-center"
+                className="shadow-md shadow-gray-600 rounded-lg content-center cursor-pointer"
+                onClick={() => window.open(link)}
               >
                 <img
                   src={src}
@@ -72,12 +84,9 @@ export default function Portfolio() {
                   className="rounded-md duration-200 hover:scale-105"
                 />
                 <div className="flex">
-                  <button className="w-1/2  px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Demo
-                  </button>
-                  <button className="w-1/2  px-6 py-3 m-4 duration-200 hover:scale-105">
-                    Code
-                  </button>
+                  <p className="px-6 py-3 m-4 duration-200 hover:scale-105">
+                    {description}
+                  </p>
                 </div>
               </div>
             ))}
