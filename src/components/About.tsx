@@ -27,7 +27,7 @@ export default function About() {
       <div className="w-full h-full bg-gradient-to-b from-gray-800 to-black text-white md:flex">
       <div className="">
           <animated.div style={props1}>
-            <img className="pt-10" src={blockchain} />
+            <img className="pt-10" src={blockchain} alt="Blockchain illustration" />
           </animated.div>
         </div>
         <div className="p-4 max-w-screen-lg md:p-4 mx-auto flex flex-col justify-center w-full md:w-1/2 h-full">

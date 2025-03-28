@@ -1,12 +1,8 @@
 import React from "react";
 import { Element } from "react-scroll";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import nextjs from "../assets/nextjs.png";
-import graphql from "../assets/graphql.png";
 import react from "../assets/react.png";
-import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import soldity from "../assets/solidity-logo.png";
 import typescript from "../assets/typescript.png";

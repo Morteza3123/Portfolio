@@ -1,7 +1,6 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { useSpring, animated } from "react-spring";
-import blockchain from "../assets/blockchain.png";
 
 export default function MyVideo() {
     const props = useSpring({
@@ -13,14 +12,14 @@ export default function MyVideo() {
         from: { x: 5, opacity: 0.2 },
     });
 
-    const props1 = useSpring({
-        loop: { reverse: true },
-        reverse: false,
-        to: { y: 10, opacity: 1 },
-        delay: 10,
-        config: { duration: 2000 },
-        from: { y: -10, opacity: 0.8 },
-    });
+    // const props1 = useSpring({
+    //     loop: { reverse: true },
+    //     reverse: false,
+    //     to: { y: 10, opacity: 1 },
+    //     delay: 10,
+    //     config: { duration: 2000 },
+    //     from: { y: -10, opacity: 0.8 },
+    // });
 
     return (
         <Element name="about">
