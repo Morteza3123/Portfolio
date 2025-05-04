@@ -23,17 +23,8 @@ export default function MyVideo() {
 
     return (
         <Element name="about">
-                  <div className="w-full md:h-screen bg-gradient-to-b from-gray-800 to-black text-white md:flex">
-                  <div className="md:pt-10 w-full h-full">
-                    <iframe
-                        className="md:pt-10 mx-auto flex flex-col justify-center  w-full h-full md:w-4/5 md:h-4/5"
-                        allowFullScreen
-                        src="https://www.youtube.com/embed/iMxfJRYEQvA?si=s27bE8ziKsAQjZZo"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    ></iframe>
-                </div>
-                    <div className="p-4 max-w-screen-lg md:p-4 mx-auto flex flex-col justify-center w-full md:w-1/2 h-full">
+                  <div className="w-full md:h-screen bg-gradient-to-b from-gray-800 to-black text-white">
+                  <div className="p-1 max-w-screen-lg md:p-4 mx-auto flex flex-col justify-center w-full md:w-full h-full">
                       <animated.div style={props}>
                         <div className="">
                           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
@@ -46,8 +37,19 @@ export default function MyVideo() {
                       </p>
             
                       <br />
-        
+
+                      <div className="md:w-full h-full">
+                    <iframe
+                        className="mx-auto flex flex-col justify-center  w-full h-full md:w-5/5 md:h-5/5"
+                        allowFullScreen
+                        src="https://www.youtube.com/embed/iMxfJRYEQvA?si=s27bE8ziKsAQjZZo"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    ></iframe>
+                </div>
                     </div>
+                  
+                    
                     
                   </div>
         </Element>
